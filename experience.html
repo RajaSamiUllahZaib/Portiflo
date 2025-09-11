@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience | Raja Sami Ullah Zaib</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-gray-800/95 shadow-sm z-40">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a class="flex items-center gap-3" href="index.html">
+        <img src="SAMI ETEA.jpeg" class="w-10 h-10 rounded-full border-2 border-blue-600">
+        <div>
+          <div class="text-lg font-semibold">Raja Sami Ullah Zaib</div>
+          <div class="text-xs text-gray-500 dark:text-gray-300">Computer Science • Web & ML</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 font-medium text-sm">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="experience.html" class="text-blue-600">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="SAMI%20CV.pdf" download
+           class="ml-3 inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold
+                  hover:scale-110 hover:shadow-lg hover:shadow-yellow-500/50 transition duration-300 ease-in-out"
+           data-aos="fade-down" data-aos-delay="300">
+           <i class="fas fa-download"></i> CV
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Experience Section -->
+  <main class="pt-20">
+    <section id="experience" class="bg-gray-100 dark:bg-gray-800 py-16">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-10 text-gray-900 dark:text-gray-100" data-aos="fade-up">
+          My Experience
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
+
+          <!-- Frontend Development Intern -->
+          <div onclick="openModal('frontendExp')" class="exp-card text-center" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-code text-green-500 text-5xl mb-4"></i>
+            <h3 class="font-semibold text-lg mb-2">Frontend Development Intern</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">Brainex World Pvt Limited, Abbottabad</p>
+            <span class="text-xs text-gray-500 dark:text-gray-400">July 2023 – October 2023</span>
+          </div>
+
+          <!-- Android Development Intern -->
+          <div onclick="openModal('androidExp')" class="exp-card text-center" data-aos="fade-up" data-aos-delay="200">
+            <i class="fab fa-android text-blue-500 text-5xl mb-4"></i>
+            <h3 class="font-semibold text-lg mb-2">Android Development Intern</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">InsaafDaar</p>
+            <span class="text-xs text-gray-500 dark:text-gray-400">July 2024 – September 2024</span>
+          </div>
+
+          <!-- Machine Learning Intern -->
+          <div onclick="openModal('mlExp')" class="exp-card text-center" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-robot text-pink-500 text-5xl mb-4"></i>
+            <h3 class="font-semibold text-lg mb-2">Machine Learning Intern</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">Arch Technologies, Islamabad</p>
+            <span class="text-xs text-gray-500 dark:text-gray-400">June 2025 – August 2025</span>
+          </div>
+
+          <!-- Data Analyst Intern -->
+          <div onclick="openModal('dataAnalystExp')" class="exp-card text-center" data-aos="fade-up" data-aos-delay="400">
+            <i class="fas fa-database text-yellow-500 text-5xl mb-4"></i>
+            <h3 class="font-semibold text-lg mb-2">Data Analyst Intern</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-300 mb-1">Heavy Mechanical Complex (HMC)</p>
+            <span class="text-xs text-gray-500 dark:text-gray-400">August 2025 – August 2025</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modals -->
+  <!-- Frontend -->
+  <div id="frontendExp" class="modal">
+    <div class="modal-content">
+      <h3 class="text-xl font-semibold mb-3">Frontend Development Intern</h3>
+      <p class="mb-4">Worked on designing responsive web pages using HTML, CSS, JavaScript, and TailwindCSS.</p>
+      <a href="DOC-20231028-WA0027..pdf" download
+         class="bg-blue-500 text-white px-4 py-2 rounded-full mb-4 inline-block hover:scale-105 transition">
+         <i class="fas fa-download"></i> View Internship Certificate
+      </a>
+      <br>
+      <button onclick="closeModal('frontendExp')" class="close-btn mt-2">Close</button>
+    </div>
+  </div>
+
+  <!-- Android -->
+  <div id="androidExp" class="modal">
+    <div class="modal-content">
+      <h3 class="text-xl font-semibold mb-3">Android Development Intern</h3>
+      <p class="mb-4">Developed Android apps with Java and Kotlin, focusing on UI and API integration.</p>
+      <a href="Raja Sami Ullah Zaib Internship Certificate.pdf" download
+         class="bg-blue-500 text-white px-4 py-2 rounded-full mb-4 inline-block hover:scale-105 transition">
+         <i class="fas fa-download"></i> View Internship Certificate
+      </a>
+      <br>
+      <button onclick="closeModal('androidExp')" class="close-btn mt-2">Close</button>
+    </div>
+  </div>
+
+  <!-- ML -->
+  <div id="mlExp" class="modal">
+    <div class="modal-content">
+      <h3 class="text-xl font-semibold mb-3">Machine Learning Intern</h3>
+      <p class="mb-4">Worked on ML models for data analysis, including preprocessing, training, and evaluation.</p>
+      <a href="ml_certificate.pdf" download
+         class="bg-blue-500 text-white px-4 py-2 rounded-full mb-4 inline-block hover:scale-105 transition">
+         <i class="fas fa-download"></i> View Internship Certificate
+      </a>
+      <br>
+      <button onclick="closeModal('mlExp')" class="close-btn mt-2">Close</button>
+    </div>
+  </div>
+
+  <!-- Data Analyst -->
+  <div id="dataAnalystExp" class="modal">
+    <div class="modal-content">
+      <h3 class="text-xl font-semibold mb-3">Data Analyst Intern</h3>
+      <p class="mb-4">Performed data collection, cleaning, visualization, and basic statistical analysis.</p>
+      <a href="data_analyst_certificate.pdf" download
+         class="bg-blue-500 text-white px-4 py-2 rounded-full mb-4 inline-block hover:scale-105 transition">
+         <i class="fas fa-download"></i> View Internship Certificate
+      </a>
+      <br>
+      <button onclick="closeModal('dataAnalystExp')" class="close-btn mt-2">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 text-center">
+    <div class="flex justify-center gap-6 mb-4">
+      <a href="https://github.com/rajasamiullahzaib" target="_blank"
+         class="hover:scale-125 transition-transform duration-300 ease-in-out"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/raja-sami-ullah-zaib-8b7458379" target="_blank"
+         class="hover:scale-125 transition-transform duration-300 ease-in-out"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="mailto:youremail@example.com"
+         class="hover:scale-125 transition-transform duration-300 ease-in-out"><i class="fas fa-envelope fa-2x"></i></a>
+    </div>
+    <p class="text-sm">&copy; 2025 Raja Sami Ullah Zaib. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script>
+    function openModal(id) { document.getElementById(id).style.display = "flex"; }
+    function closeModal(id) { document.getElementById(id).style.display = "none"; }
+  </script>
+
+  <!-- CSS -->
+  <style>
+    .exp-card {
+      cursor: pointer;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .dark .exp-card { background: #374151; color: #f3f4f6; }
+    .exp-card:hover { transform: scale(1.05); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+    .modal {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,0.7);
+      display: none; align-items: center; justify-content: center;
+      z-index: 50;
+    }
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      max-width: 500px;
+      text-align: center;
+    }
+    .dark .modal-content { background: #1f2937; color: #f3f4f6; }
+    .close-btn {
+      background: #ef4444; color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      transition: 0.3s;
+    }
+    .close-btn:hover { transform: scale(1.1); background: #dc2626; }
+  </style>
+
+</body>
+</html>

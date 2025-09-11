@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home | Raja Sami Ullah Zaib</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class' }</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 bg-white/95 dark:bg-gray-800/95 shadow-sm z-40">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <a class="flex items-center gap-3" href="index.html">
+        <img src="SAMI ETEA.jpeg" class="w-10 h-10 rounded-full border-2 border-blue-600">
+        <div>
+          <div class="text-lg font-semibold">Raja Sami Ullah Zaib</div>
+          <div class="text-xs text-gray-500 dark:text-gray-300">Computer Science • Web • ML • Data Analysis</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 font-medium text-sm">
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="experience.html">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="SAMI%20CV.pdf" download
+           class="ml-3 inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold
+                  hover:scale-110 hover:shadow-lg hover:shadow-yellow-500/50 transition-transform duration-300 ease-in-out"
+           data-aos="fade-down" data-aos-delay="300">
+           <i class="fas fa-download"></i> CV
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="pt-20">
+    <section class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-center px-6">
+      <img src="SAMI ETEA.jpeg" alt="Profile Picture"
+           class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-lg mb-6 object-cover
+                  hover:scale-110 transition-transform duration-300 ease-in-out"
+           data-aos="zoom-in">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Raja Sami Ullah Zaib</h1>
+      <p class="text-lg md:text-2xl mb-6" data-aos="fade-up" data-aos-delay="200">
+        Computer Science undergraduate specializing in Web Development , Machine Learning, App Development & Data Analytics
+      </p>
+      <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
+        <!-- Hire Me Button -->
+        <a href="contact.html"
+           class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold shadow
+                  hover:scale-110 hover:shadow-lg hover:shadow-blue-500/50 transition duration-300 ease-in-out">
+           Hire Me
+        </a>
+        <!-- Download CV Button -->
+        <a href="SAMI%20CV.pdf" download
+           class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full font-semibold shadow
+                  hover:scale-110 hover:shadow-lg hover:shadow-yellow-500/50 transition duration-300 ease-in-out">
+           <i class="fas fa-download"></i> Download CV
+        </a>
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/raja-sami-ullah-zaib-8b7458379" target="_blank"
+           class="border border-white px-6 py-3 rounded-full
+                  hover:scale-110 hover:bg-white/10 hover:shadow-lg hover:shadow-white/30 transition duration-300 ease-in-out">
+           <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8 text-center">
+    <div class="flex justify-center gap-6 mb-4">
+      <a href="https://github.com/rajasamiullahzaib" target="_blank"
+         class="hover:scale-125 transition-transform duration-300 ease-in-out"><i class="fab fa-github fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/raja-sami-ullah-zaib-8b7458379" target="_blank"
+         class="hover:scale-125 transition-transform duration-300 ease-in-out"><i class="fab fa-linkedin fa-2x"></i></a>
+      <a href="mailto:youremail@example.com"
+         class="hover:scale-125 transition-transform duration-300 ease-in-out"><i class="fas fa-envelope fa-2x"></i></a>
+    </div>
+    <p class="text-sm">&copy; 2025 Raja Sami Ullah Zaib. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+</html>
