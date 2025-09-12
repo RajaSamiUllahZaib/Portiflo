@@ -19,7 +19,9 @@
         <img src="SAMI ETEA.jpeg" class="w-10 h-10 rounded-full border-2 border-blue-600">
         <div>
           <div class="text-lg font-semibold">Raja Sami Ullah Zaib</div>
-          <div class="text-xs text-gray-500 dark:text-gray-300">Computer Science • Web • ML • Data Analysis</div>
+          <div class="text-xs text-gray-500 dark:text-gray-300">
+            Computer Science • Web • ML • Data Analysis
+          </div>
         </div>
       </a>
 
@@ -29,17 +31,20 @@
       </button>
 
       <!-- Nav Links -->
-      <nav id="menu" class="hidden md:flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 font-medium text-sm absolute md:static top-16 left-0 w-full md:w-auto bg-white dark:bg-gray-800 shadow-md md:shadow-none p-4 md:p-0">
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+      <nav id="menu"
+           class="max-h-0 overflow-hidden md:overflow-visible md:max-h-none transition-all duration-500 ease-in-out
+                  flex-col md:flex md:flex-row items-start md:items-center gap-4 md:gap-6 font-medium text-sm
+                  absolute md:static top-16 left-0 w-full md:w-auto bg-white dark:bg-gray-800 shadow-md md:shadow-none 
+                  p-6 md:p-0 opacity-0 md:opacity-100">
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="skills.html" class="hover:text-blue-600">Skills</a>
+        <a href="certifications.html" class="hover:text-blue-600">Certifications</a>
+        <a href="experience.html" class="hover:text-blue-600">Experience</a>
+        <a href="projects.html" class="hover:text-blue-600">Projects</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
         <a href="SAMI%20CV.pdf" download
            class="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 px-4 py-2 rounded-full font-semibold
-                  hover:scale-110 hover:shadow-lg hover:shadow-yellow-500/50 transition-transform duration-300 ease-in-out"
-           data-aos="fade-down" data-aos-delay="300">
+                  hover:scale-110 hover:shadow-lg hover:shadow-yellow-500/50 transition-transform duration-300 ease-in-out">
            <i class="fas fa-download"></i> CV
         </a>
       </nav>
@@ -103,7 +108,15 @@
     const menu = document.getElementById('menu');
 
     btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
+      if (menu.style.maxHeight && menu.style.maxHeight !== '0px') {
+        menu.style.maxHeight = '0px';
+        menu.style.opacity = '0';
+        btn.textContent = '☰'; // back to hamburger
+      } else {
+        menu.style.maxHeight = menu.scrollHeight + 'px';
+        menu.style.opacity = '1';
+        btn.textContent = '✖'; // change to X
+      }
     });
   </script>
 </body>
